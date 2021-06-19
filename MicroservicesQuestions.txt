@@ -1,0 +1,86 @@
+What is the preferred type of communication between Microservices?
+Why do we break the Monolith software into Microservices? 
+What types of caching exists for Web APIs?
+
+Q. Microservices benefits
+
+Microservices provide many benefits. Some of the key benefits are:
+
+Scaling: Since there are multiple Microservices instead of one monolith, it is easier to scale up the service that is being used more. Eg. Let say, you have a Product Lookup service and Product Buy service. The frequency of Product Lookup is much higher than Product Buy service. In this case, you can just scale up the Product Lookup service to run on powerful hardware with multiple servers. Meanwhile, Product Buy service can remain on less powerful hardware.
+Resilience: In Microservice architecture, if your one service goes down, it may not affect the rest of the system. The other parts can keep functioning, business as usual (BAU). Eg. Let say, you have Product Recommendation service and Product Buy service. If Product Recommendation service goes down, the Product Buy service can still keep running.
+Technology Mix: With so many changes in technology everyday, you can keep using the latest technology for your new Microservices. You can adopt new technologies with less risk compared to Monolithic architecture. This is one of the best benefits of Microservices architecture.
+Reuse: Microservices help you in reusing the lessons learnt from one service to another. Easy Deployment: Microservices architecture, if done correctly, helps in making the deployment process smooth. If anything goes wrong, it can be rolled back easily and quickly in Microservices.
+
+Q.   What is the difference between Orchestration and Choreography in Microservices architecture?
+
+In Orchestration, we rely on a central system to control and call various Microservices to complete a task. 
+In Choreography, each Microservice works like a State Machine and reacts based on the input from other parts.
+Orchestration is a tightly coupled approach for integrating Microservices. But Choreography introduces loose coupling. 
+Also, Choreography based systems are more flexible and easy to change than Orchestration based systems.
+Orchestration is often done by synchronous calls. But choreography is done by asynchronous calls. 
+The synchronous calls are much simpler compared to asynchronous communication. 
+
+Q. Is a good idea to microservices to share common db?
+
+Sharing a common database between multiple Microservices increases coupling between them. 
+One service can start accessing data tables of another service. 
+This can defeat the purpose of bounded context. So it is not a good idea to share a common database between Microservices.
+
+
+Q.   What are the disadvantages of using Shared libraries approach to decompose a monolith application?
+
+You can create shared libraries to increase reuse and sharing of features among teams. But there are some downsides to it.
+Since shared libraries are implemented in same language, it constrains you from using multiple types of technologies.
+It does not help you with scaling the parts of system that need better performance.
+Deployment of shared libraries is same as deployment of Monolith application, so it comes with same deployment issues.
+Shared libraries introduce shared code that can increase coupling in software.
+
+Q.   What are the characteristics of a Good Microservice?
+
+Good Microservices have these characteristics: 
+a. Loose coupling: A Microservice knows little about any other service. It is as much independent as possible. The change made in one Microservice does not require changes in other Microservices.
+b. Highly cohesive: Microservices are highly cohesive so that each one of them can provide one set of behavior independently.
+c. Bounded Context: A Microservice serves a bounded context in a domain and communicates with rest of the domain by using an interface for that Bounded context.
+d. Business Capability: Microservices individually add business capability that is part of big picture in organization.
+
+Q.  What is Bounded Context?
+
+A bounded context is like a specific responsibility that is developed within a boundary. 
+In a domain there can be multiple bounded contexts that are internally implemented. 
+Eg. A hospital system can have bounded contexts like- Emergency Ward handling, Regular vaccination, Out patient treatment etc.
+ Within each bounded context, each sub-system can be independently designed and implemented. 
+
+
+Q. What are the issues in using REST over HTTP for Microservices?
+
+In REST over HTTP, it is difficult to generate a client stub.
+Some Web-Servers also do not support all the HTTP verbs like- GET, PUT, POST, DELETE etc. 
+Due to JSON or plain text in response, performance of REST over HTTP is better than SOAP. But it is not as good as plain binary communication.
+There is an overhead of HTTP in each request for communication.
+HTTP is not well suited for low-latency communications. There is more work in consumption of payload. There may be overhead of serialization, deserialization in HTTP
+
+Q. Can we create Microservices as State Machines?
+
+Yes, Microservices are independent entities that serve a specific context. For that context, the Microservice can work as a State Machine. In a State Machine, there are lifecycle events that cause change in the state of the system.
+Eg. In a Library service, there is a book that changes state based on different events like- issue a book, return a book, lose a book, late return of a book, add a new book to catalog etc. These events and book can form a state machine for Library Microservice. 
+
+Q.  What is the benefit of Single Service per Host model in Microservices?
+
+When we deploy Single Service on a Host, then we get the benefit of avoiding single point of failure. A failure on one host will only impact one service at a time.
+It also makes monitoring and security easier than multiple services on one host.
+Single Service per Host is also easier to scale in case we want a specific service to be scaled up. 
+
+
+https://www.udemy.com/course/microservices-interview-questions/?ranMID=39197&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-8HtwH0BgcOzFS67I3qSYaQ&LSNPUBID=jU79Zysihs4&utm_source=aff-campaign&utm_medium=udemyads
+
+What is Domain Driven Design?,l
+Consumer-Driven Contract?
+The Scale Cube
+CAP theorem
+How to implement a query that retrieves data from multiple services in a microservice architecture?
+Command Query Responsibility Segregation (CQRS) 
+API Composition
+
+
+Microservices Interview Questions Preparation Course  Udemy
+Top 50 Microservices Interview Questions & Answers: Good Collection of Questions Faced in Architect Level Technical Interviews  Knowledge Powerhouse

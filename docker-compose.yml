@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  postgres:
+    container_name: postgres
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: orderdetails
+      PGDATA: /data/postgres
+    volumes:
+      - postgresdata:/data/postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - postgres
+    restart: unless-stopped
+
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    container_name: mongo-local
+    hostname: finexpmongo-local
+    volumes:
+      - mongodata:/data/db
+    networks:
+      - postgres
+    restart: unless-stopped
+
+networks:
+  postgres:
+    driver: bridge
+
+volumes:
+  postgresdata:
+  mongodata:

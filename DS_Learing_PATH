@@ -1,0 +1,79 @@
+https://roytuts.com/category/spring/spring-cloud/
+https://renaissance.programmingpathshala.com/crack-coding-interviews#Learning
+
+Fundamentals of Data Structures and Algorithms 4 months Gear Up
+
+5 weeks
+Arrays and Dynamic Arrays, Maths Algorithms, Combinatorics, Time and Space Complexity Analysis, Recursion and Backtracking
+Fundamental Algorithms
+
+4 weeks
+Searching Algorithms, Sorting Algorithms like Comparison based sorting and Linear time sorting, Two Pointers, Bit Manipulation
+Fundamental Data Structures
+
+7 weeks
+Hashing & Chaining, Stacks & Queues, Linked-Lists, Doubly Linked lists, Hierarchical Data Structures: Binary Trees, N-ary and Generic Trees, Binary Search Trees
+
+Section 2
+Operating Systems
+
+2 weeks
+CPU and Memory Virtualization, Introduction to Processes, Process Life Cycle, Process Scheduling Algorithms, Memory Management: Segmentation and Fragmentation, Paging and Page Tables, Thread vs. Process, Concept of Concurrency with code examples, Semaphores, Deadlocks
+
+Database Management Systems
+1 week
+Need for databases, Types: SQL vs NoSQL(Document, Graph, Time-series). Relational Algebra, Writing SQL query, Designing a SQL Database: Entity-Relationship diagrams, Normalization of Tables, ACID properties and transactions, Distributed Databases and CAP theorem
+
+Computer Networks
+1 week
+Understanding components of the Web and need for networking. OSI Layers, Error Control, Flow Control, Routing Algorithms, Network Hardware Devices e.g. Routers, Switches, Hubs etc. TCP vs. UDP. HTTP, HTTPS and other application layer protocols. Concept of DNS
+
+
+Advanced Data Structures and Algorithms - Part 1
+4 weeks
+Range Queries: Sparse Tables, Binary Lifting, Segment Trees, Lazy-Propagation; Prefix Searches: Tries; Graph Algorithms: Traversals, Topological Sort, Strongly Connected Components, Variety of shortest-path algorithms; Disjoint Set Union
+
+OOPS fundamentals and Clean Coding Principles
+
+5 days
+Working knowledge of one object oriented language and practical understanding of Abstraction, Encapsulation, Inheritance, Polymorphism. Writing a modular code, Naming conventions and best practices
+Design Principles and Testability
+
+5 days
+Understanding SOLID principles of design. Writing a testable code, Unit testing
+Design Patterns
+
+10 days
+Creational Patterns like Builder, Factory Patterns etc, Behavioural Patterns like Strategy, Iterator, Observer etc and many others. Designing class diagrams.
+Case Studies
+
+10 days
+Designing a Cricket Scoreboard, BookMyShow and many interesting real world examples
+
+
+Introduction to HLD and Single Node Database
+
+5 days
+Coding our own sample Database(Key-Value store) from scratch and understanding various layers. SQL vs. No-SQL vs other storage types
+Distributed Databases and CAP theorem
+
+5 days
+Architecture, Concept of Replicas and Shards, Master-Slave design, Balancing and optimizing b/w the three: Consistency, Availability and Partition, Distributed Locking mechanisms etc.
+Networks, Caching and Event Driven Systems
+
+10 days
+Quick recap of network layers and protocols, client-server architecture, Throttling, Rate-limiters, Loadbalancers, Design of High Throughput servers, Caching Mechanism, Designing Message Queue systems, Long Polling, Web-sockets etc.
+Linux File Systems
+
+5 days
+Deep-dive on design of a single node file system, understanding the various layers. Working of a distributed file system
+Case Studies
+
+5 days
+Designing Uber, Messaging System, etc.
+
+
+Advanced Data Structures and Algorithms - Part 2
+
+4 weeks
+Greedy Algorithms e.g. Huffman Coding, Heaps and Priority Queues; Dynamic Programming variations: DP on Strings, Values, Trees, Graphs and Bitmasks; String Algorithms, Rolling Hashes
