@@ -1,0 +1,12 @@
+{
+  "name" : "Rohini Jasrotia",
+  "email" : "Rohini@gmail.com",
+  "employee_details" : {
+    "state" : "J&K",
+    "phoneNumber" : "95903219707",
+    "gender": "FEMALE",
+    "zipCode" : "184148",
+    "street" : "Marheen",
+    "dateOfBirth" : "29-05-1991"
+  }
+}
