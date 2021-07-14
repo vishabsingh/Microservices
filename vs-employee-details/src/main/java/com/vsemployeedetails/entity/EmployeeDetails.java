@@ -16,6 +16,8 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.Size;
+
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -25,6 +27,7 @@ import lombok.Setter;
 @Setter
 @Getter
 @NoArgsConstructor
+@AllArgsConstructor
 public class EmployeeDetails  implements Serializable {
 
   @Id
@@ -54,5 +57,9 @@ public class EmployeeDetails  implements Serializable {
   @OneToOne(cascade = CascadeType.ALL)
   private Employee employee;
 
-
+  public EmployeeDetails(String state, Gender gender, String zipCode) {
+    this.state = state;
+    this.gender = gender;
+    this.zipCode = zipCode;
+  }
 }

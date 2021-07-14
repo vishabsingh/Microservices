@@ -2,9 +2,13 @@ package com.vsemployeedetails.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.vsemployeedetails.dto.EmployeeDTO;
+import com.vsemployeedetails.dto.ItemDTO;
 import com.vsemployeedetails.entity.Employee;
+import com.vsemployeedetails.entity.Item;
 import com.vsemployeedetails.service.EmployeeService;
 import java.util.List;
+
+import com.vsemployeedetails.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,6 +25,9 @@ public class EmployeeController {
 
   @Autowired
   private EmployeeService employeeService;
+
+  @Autowired
+  private ItemService itemService;
 
   @Autowired
   private ObjectMapper objectMapper;
@@ -46,4 +53,7 @@ public class EmployeeController {
   public String fetchAllEmployeeWithOrderDetails(@PathVariable String employeeId){
     return employeeService.getAllEmployeeOrder(employeeId);
   }
+
+
+
 }

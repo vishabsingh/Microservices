@@ -14,7 +14,7 @@ spring:
       database-platform: org.hibernate.dialect.H2Dialect
       show-sql: true
       hibernate:
-        ddl-auto: none
+        ddl-auto: update
   zipkin:
     base-url: http://localhost:9411/zipkin/
   sleuth:
@@ -42,3 +42,7 @@ management:
       base-path: /userInfo
       exposure:
         include: "*"
+logging:
+  level:
+    root: INFO
+
